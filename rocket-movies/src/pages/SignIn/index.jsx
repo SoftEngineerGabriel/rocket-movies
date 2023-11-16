@@ -1,7 +1,9 @@
-import { FiMail} from 'react-icons/fi'
+import { FiMail, FiLock} from 'react-icons/fi'
 
 import { Background, Container, Form } from './styles';
+
 import { Input } from '../../components/Input';
+import { Button } from '../../components/Button';
 
 
 export function SingIn() {
@@ -16,8 +18,18 @@ export function SingIn() {
 
         <Input 
           icon={FiMail}
+          type="email"
           placeholder="E-mail"
         />
+
+        <Input 
+          icon={FiLock}
+          type="password"
+          placeholder="Senha"
+        />
+
+        <Button title="Entrar"/>
+        
       </Form>
 
       <Background/>
