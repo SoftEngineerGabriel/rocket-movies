@@ -1,4 +1,4 @@
-import { FiMail, FiLock} from 'react-icons/fi'
+import { FiMail, FiLock, FiUser, FiArrowLeft} from 'react-icons/fi'
 
 import { Background, Container, Form } from './styles';
 
@@ -7,7 +7,7 @@ import { Button } from '../../components/Button';
 import { ButtonText } from '../../components/ButtonText';
 
 
-export function SingIn() {
+export function SignUp() {
 
   return (
     <Container>
@@ -15,7 +15,14 @@ export function SingIn() {
         <h1>RocketMovies</h1>
         <span>Aplicação para acompanhar tudo que assistir.</span>
 
-        <h2>Faça seu Login</h2>
+        <h2>Criar conta</h2>
+
+        <Input 
+          icon={FiUser}
+          type="text"
+          placeholder="Nome"
+        />
+
 
         <Input 
           icon={FiMail}
@@ -30,7 +37,8 @@ export function SingIn() {
         />
 
         <Button title="Entrar"/>
-        <ButtonText title="Criar"/>
+        
+        <ButtonText title="Voltar para login" />
       </Form>
 
       <Background/>

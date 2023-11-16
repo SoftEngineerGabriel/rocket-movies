@@ -16,13 +16,15 @@ export const Container = styled.div`
         width: 100%;
 
         font-family: 'Roboto Slab', serif;
-        outline: none;
+        
+
         padding: 12px;
         color: ${({ theme }) => theme.COLORS.GRAY_100};
-        background: transparent;
+        background-color: transparent;
+        outline: none;
         border: 0;
 
-        & ::placeholder{
+        &:placeholder{
             color: ${({ theme }) => theme.COLORS.GRAY_300};
         }
     }
