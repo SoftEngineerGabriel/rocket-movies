@@ -16,7 +16,9 @@ export function Home() {
                     <h1>Meus filmes</h1>
                     <Button  title="Adicionar mais filmes"  icon={FiPlus}/>
                 </header>
-            <Section/>
+            <Section
+                title="Exemplo"
+            />
         </Container>
     )
 }

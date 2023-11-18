@@ -8,7 +8,7 @@ export const Container = styled.div`
     padding: 32px;
     border-radius: 16px;
 
-    > h1 {
+    > h2 {
         color: ${({ theme }) => theme.COLORS.WHITE};
         font-family: Roboto Slab;
         font-size: 24px;
@@ -29,6 +29,11 @@ export const Container = styled.div`
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+    }
+
+    > div {
+        display: flex;
+        gap: 8px;
     }
 
 `;
